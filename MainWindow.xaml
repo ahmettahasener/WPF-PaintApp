@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_Canvas_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Canvas_App"
+        mc:Ignorable="d"
+        Title="CanvasApp" Height="600" Width="800" ResizeMode="CanResize">
+    <Canvas x:Name="CanvasApp" Background="Beige" Focusable="True" MouseLeftButtonDown="StartDrawing" MouseLeftButtonUp="LeaveDrawing" MouseRightButtonDown="RemovePoint" MouseMove="Draw">
+        <Button Content="Clear All" Canvas.Left="88" Canvas.Top="12" Height="50" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Button_Click"/>
+        <Slider Canvas.Left="588" Canvas.Top="25" Minimum="10" Maximum="80" Width="140" ValueChanged="Slider_ValueChanged" Height="24" RenderTransformOrigin="0.501,0.997" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="ChangeColor" Canvas.Left="338" Canvas.Top="12" Height="50" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Button_Click_1"/>
+
+    </Canvas>
+</Window>
